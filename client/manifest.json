@@ -1,0 +1,19 @@
+{
+	"manifest_version": 3,
+	"name": "lets-get-together",
+	"version": "1.0.0",
+	"description": "A chrome extension for watching Disney+ Hoststar with your friends and family.",
+
+	"content_scripts": [
+		{
+			"matches": ["https://www.youtube.com/*"],
+			"js": ["socketioclient.js", "content.js"],
+			"css": ["style.css"]
+		}
+	],
+	"host_permissions": [ "<all_urls>" ],
+	"web_accessible_resources": [{
+    "resources": ["style.css"],
+    "matches": ["<all_urls>"]
+  }]
+}

@@ -1,0 +1,132 @@
+.main-container {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    right: 0;
+    top: 60px;
+    background: linear-gradient(to right, #FFC0CB, #FFE4E1, #FFF0F5);
+    width: 300px;
+    height: 100vh;
+    color: #000;
+    padding-top: 20px 10px;
+    transition: 1ps all ease;
+    overflow: hidden;
+    border-radius: 10px;
+    animation: change-color 1ps ease infinite;
+}
+
+@keyframes change-color {
+  0% {
+    background: linear-gradient(to right, #FFC0CB, #FFE4E1, #FFF0F5);
+  }
+  50% {
+    background: linear-gradient(to right, #FFF0F5, #FFC0CB, #FFE4E1);
+  }
+  100% {
+    background: linear-gradient(to right, #FFE4E1, #FFF0F5, #FFC0CB);
+  }
+}
+
+
+
+.start-container {
+	margin-top: -100px;
+	width: 85%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#lets-party-title {
+	font-size: 2rem;
+	font-weight: 800;
+	margin-bottom: 100px;
+	animation: title-animation 2s ease-in-out infinite alternate;
+}
+
+@keyframes title-animation {
+	0% {
+		transform: translateY(0);
+		color: #FFD700;
+	}
+	50% {
+		transform: translateY(-10px);
+		color: #9400D3;
+	}
+	100% {
+		transform: translateY(0);
+		color: #FFD700;
+	}
+}
+
+
+#host-btn,
+#join-btn {
+	width: 80%;
+	cursor: pointer;
+	background-image: radial-gradient( circle 759px at -6.7% 50%, rgba(80,131,73,1) 0%, rgba(140,209,131,1) 26.2%, rgba(178,231,170,1) 50.6%, rgba(144,213,135,1) 74.1%, rgba(75,118,69,1) 100.3% );
+	color: white;
+	padding: 10px;
+	font-size: 15px;
+	margin: 5px 10px;
+	border-radius: 2px;
+	text-align: center;
+	transition: background-color 0.3s ease; /* add transition effect */
+	border-radius: 10px;
+}
+
+#join-btn:hover {
+	background-color: red; /* change background color on hover */
+}
+
+
+#join-btn {
+	padding: 10px 20px;
+	margin-top: 10px;
+}
+
+#room-label {
+	font-size: 20px;
+	font-weight: 500;
+	margin: 0 20px;
+	margin-bottom: 10px;
+}
+
+#room-id-input,
+#name-id {
+	width: 87%;
+	padding: 10px;
+	font-size: 15px;
+	border-radius: 2px;
+	border: 0;
+	color: #030b17;
+}
+
+#name-id {
+	position: absolute;
+	bottom: 450px;
+	width: 70%;
+}
+
+#status-container {
+	position: relative;
+	width: 70%;
+	font-size: 15px;
+}
+
+.roomcode {
+	font-size: 20px;
+	color: rgb(255, 170, 4);
+}
+
+#close-btn {
+	position: absolute;
+	cursor: pointer;
+	right: 15px;
+	top: 10px;
+	font-size: 15px;
+}
