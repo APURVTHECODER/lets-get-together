@@ -1,6 +1,6 @@
 # lets-get-together
-<img align="right" alt="Coding" width="400" src="image/AS.png">
-<img align="right" alt="Coding" width="400" src="image/AS1.png">
+<img align="right" alt="Coding" width="400" src="image/AS.jpg">
+<img align="right" alt="Coding" width="400" src="image/AS1.jpg">
 This is a Hospital Management System (HMS) implemented using Flask, a web framework for Python. The project manages doctors, patients, bookings, and user authentication. Let me provide a brief introduction to the project:
 
 Project Overview:
